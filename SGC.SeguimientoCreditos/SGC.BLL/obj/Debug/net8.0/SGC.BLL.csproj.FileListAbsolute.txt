@@ -14,3 +14,19 @@ C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvan
 C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvanzadaWeb\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\refint\SGC.BLL.dll
 C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvanzadaWeb\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.pdb
 C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvanzadaWeb\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\ref\SGC.BLL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\bin\Debug\net8.0\SGC.BLL.deps.json
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\bin\Debug\net8.0\SGC.BLL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\bin\Debug\net8.0\SGC.BLL.pdb
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\bin\Debug\net8.0\SGC.DAL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\bin\Debug\net8.0\SGC.DAL.pdb
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.csproj.AssemblyReference.cache
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.AssemblyInfoInputs.cache
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.AssemblyInfo.cs
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.csproj.CoreCompileInputs.cache
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.sourcelink.json
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.csproj.Up2Date
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\refint\SGC.BLL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\SGC.BLL.pdb
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.BLL\obj\Debug\net8.0\ref\SGC.BLL.dll

@@ -49,3 +49,16 @@ C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvan
 C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvanzadaWeb\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\refint\SGC.DAL.dll
 C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvanzadaWeb\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.pdb
 C:\Users\Wstov\Desktop\Programacion Avanzada Web\Proyecto_Final\ProgramacionAvanzadaWeb\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\ref\SGC.DAL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\bin\Debug\net8.0\SGC.DAL.deps.json
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\bin\Debug\net8.0\SGC.DAL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\bin\Debug\net8.0\SGC.DAL.pdb
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.csproj.AssemblyReference.cache
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.AssemblyInfoInputs.cache
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.AssemblyInfo.cs
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.csproj.CoreCompileInputs.cache
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.sourcelink.json
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\refint\SGC.DAL.dll
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\SGC.DAL.pdb
+C:\Users\rangulo\Documents\SGC\SGC.SeguimientoCreditos\SGC.DAL\obj\Debug\net8.0\ref\SGC.DAL.dll
