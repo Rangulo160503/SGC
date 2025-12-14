@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SGC.BLL.Servicios;
 using SGC.BLL.Dtos;
+using SGC.MVC.Services.Api;
 
 namespace SGC.MVC.Controllers
 {
     public class AuthController : Controller
     {
-        private readonly IUsuariosServicio _usuarios;
+        private readonly IAuthApiClient _authApiClient;
 
-        public AuthController(IUsuariosServicio usuarios)
+        public AuthController(IAuthApiClient authApiClient)
         {
-            _usuarios = usuarios;
+            _authApiClient = authApiClient;
         }
 
         // LOGIN
@@ -22,10 +22,11 @@ namespace SGC.MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string email, string password)
         {
-            var user = await _usuarios.LoginAsync(email, password);
-            if (user == null)
+            var (ok, mensaje, user) = await _authApiClient.LoginAsync(email, password);
+
+            if (!ok || user == null)
             {
-                TempData["Error"] = "Credenciales incorrectas";
+                ModelState.AddModelError(string.Empty, mensaje ?? "Credenciales incorrectas");
                 return View();
             }
 
@@ -46,15 +47,20 @@ namespace SGC.MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UsuarioDto dto)
         {
-            var resp = await _usuarios.RegistrarAsync(dto);
-
-            if (!resp.Ok)
+            if (!ModelState.IsValid)
             {
-                TempData["Error"] = resp.Mensaje;
-                return View();
+                return View(dto);
             }
 
-            TempData["Success"] = "Usuario registrado correctamente";
+            var (ok, mensaje, _) = await _authApiClient.RegisterAsync(dto);
+
+            if (!ok)
+            {
+                ModelState.AddModelError(string.Empty, mensaje ?? "No se pudo registrar el usuario");
+                return View(dto);
+            }
+
+            TempData["Success"] = mensaje ?? "Usuario registrado correctamente";
             return RedirectToAction("Login");
         }
 

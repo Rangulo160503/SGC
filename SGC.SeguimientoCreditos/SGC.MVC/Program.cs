@@ -1,32 +1,30 @@
-using Microsoft.EntityFrameworkCore;
-using SGC.DAL;
-using SGC.DAL.Repositorios;
 using SGC.BLL.Servicios;
-using AutoMapper;
-using SGC.BLL.Mapeos;
-using SGC.DAL.Repositorios.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
+using SGC.MVC.Services.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ConnectionString
-builder.Services.AddDbContext<SgcDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// HttpClient hacia la API
+var apiBaseUrl = builder.Configuration["ApiBaseUrl"] ?? throw new InvalidOperationException("ApiBaseUrl no estÃ¡ configurado");
 
-// AutoMapper
-//builder.Services.AddAutoMapper(typeof(MapeoClases));
-builder.Services.AddAutoMapper(cfg => { }, typeof(MapeoClases));
+builder.Services.AddHttpClient<IAuthApiClient, AuthApiClient>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseUrl);
+});
 
-// Repositorios DAL
-builder.Services.AddScoped<IUsuariosRepositorio, UsuariosRepositorio>();
-builder.Services.AddScoped<IClientesRepositorio, ClientesRepositorio>();
-builder.Services.AddScoped<ISolicitudesRepositorio, SolicitudesRepositorio>();
-builder.Services.AddScoped<ITrackingsRepositorio, TrackingsRepositorio>();
+builder.Services.AddHttpClient<IUsuariosServicio, UsuariosApiClient>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseUrl);
+});
 
-// Servicios BLL
-builder.Services.AddScoped<IUsuariosServicio, UsuariosServicio>();
-builder.Services.AddScoped<IClientesServicio, ClientesServicio>();
-builder.Services.AddScoped<ISolicitudesServicio, SolicitudesServicio>();
+builder.Services.AddHttpClient<IClientesServicio, ClientesApiClient>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseUrl);
+});
+
+builder.Services.AddHttpClient<ISolicitudesServicio, SolicitudesApiClient>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseUrl);
+});
 
 // MVC
 builder.Services.AddControllersWithViews();
@@ -34,7 +32,7 @@ builder.Services.AddControllersWithViews();
 // Sesiones
 builder.Services.AddSession();
 
-// HttpContextAccessor (para leer la sesión en el Layout)
+// HttpContextAccessor (para leer la sesin en el Layout)
 builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();

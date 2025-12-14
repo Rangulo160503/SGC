@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SGC.BLL\SGC.BLL.csproj" />
-    <ProjectReference Include="..\SGC.DAL\SGC.DAL.csproj" />
   </ItemGroup>
 
 </Project>

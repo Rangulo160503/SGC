@@ -1,4 +1,5 @@
-﻿@model SGC.BLL.Dtos.UsuarioDto
+@using System.Linq
+@model SGC.BLL.Dtos.UsuarioDto
 @{
     Layout = null;
 }
@@ -23,6 +24,16 @@
                     </div>
 
                     <div class="card-body">
+
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <div>@error.ErrorMessage</div>
+                                }
+                            </div>
+                        }
 
                         <form method="post">
 
