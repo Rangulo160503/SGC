@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\SGC.SeguimientoCreditos.API.props" />
-</Project>
